@@ -12,8 +12,8 @@ function sendForm(evt) {
     alert("Please fill in all the fields!");
   } else {
     const user = {
-      email: email.value,
-      password: password.value,
+      email: email.value.trim(),
+      password: password.value.trim(),
     };
     console.log(user);
     loginForm.reset();
