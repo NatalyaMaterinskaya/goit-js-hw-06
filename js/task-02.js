@@ -21,5 +21,3 @@ const createItem = ingredient => {
 const markup = ingredients.map((el) => createItem(el));
 
 list.append(...markup);
-
-console.dir(list);
