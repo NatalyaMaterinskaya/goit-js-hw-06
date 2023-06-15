@@ -12,7 +12,8 @@ const btn = widget.lastElementChild;
 btn.addEventListener("click", changeColor);
 
 function changeColor() {
-  body.style.backgroundColor = getRandomHexColor();
-  color.textContent = getRandomHexColor();
+  const currentColor = getRandomHexColor();
+  body.style.backgroundColor = currentColor;
+  color.textContent = currentColor;
 };
 
